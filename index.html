@@ -1,7 +1,4 @@
-import webbrowser
-import os
-
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -197,11 +194,3 @@ html_content = """<!DOCTYPE html>
     </script>
 </body>
 </html>
-"""
-
-# Re-generate the HTML asset instantly
-file_path = os.path.abspath("index.html")
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-print("✨ Successfully generated index.html for your Live Demo link!")
